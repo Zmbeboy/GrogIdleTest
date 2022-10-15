@@ -5988,6 +5988,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyNameUtils_PropertyNameFromString
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t RectOffset_InternalCreate_m6570FA60917650C43BBA7229F56215B92EC69873 (const RuntimeMethod* method) ;
 // System.Void UnityEngine.RectOffset::Destroy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectOffset_Destroy_mFFB78BB790E3BAFE464C29DB5F396FB2FA8E6E70 (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectOffset::set_left(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectOffset_set_left_mEE36418FAC0A5C5AA4A1C886C7CFF5D35AFAD2C0 (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectOffset::set_right(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectOffset_set_right_m6D3608E0973F68CC0D0A6A9863D31D70972A9588 (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectOffset::set_top(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectOffset_set_top_mEF389A8923A33EC2927AD13ADE00D960D4593207 (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectOffset::set_bottom(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectOffset_set_bottom_mB303CE31F9932C3BE8A3FD48E5049D624F395C83 (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, int32_t ___value0, const RuntimeMethod* method) ;
 // System.String UnityEngine.RectOffset::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RectOffset_ToString_mEE066023D51F743F0370E3547E7145FAE86B00BC (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, String_t* ___format0, RuntimeObject* ___formatProvider1, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.RectOffset::get_left()
@@ -7206,6 +7214,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_Free_mFF99F4F02FE7F735AB30
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (UnsafeUtility_Free_mFF99F4F02FE7F735AB30D8987D6953E55A2B23E1_ftn)il2cpp_codegen_resolve_icall ("Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Free(System.Void*,Unity.Collections.Allocator)");
 	_il2cpp_icall_func(___memory0, ___allocator1);
+}
+// System.Void Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy(System.Void*,System.Void*,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177 (void* ___destination0, void* ___source1, int64_t ___size2, const RuntimeMethod* method) 
+{
+	typedef void (*UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177_ftn) (void*, void*, int64_t);
+	static UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177_ftn)il2cpp_codegen_resolve_icall ("Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy(System.Void*,System.Void*,System.Int64)");
+	_il2cpp_icall_func(___destination0, ___source1, ___size2);
 }
 // System.Void Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpyStride(System.Void*,System.Int32,System.Void*,System.Int32,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_MemCpyStride_mD7836B76B4F1E7F30DFC859D4E6D7242AFD27C90 (void* ___destination0, int32_t ___destinationStride1, void* ___source2, int32_t ___sourceStride3, int32_t ___elementSize4, int32_t ___count5, const RuntimeMethod* method) 
@@ -20161,6 +20178,25 @@ IL_0016_1:
 
 IL_0020:
 	{
+		return;
+	}
+}
+// System.Void UnityEngine.RectOffset::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectOffset__ctor_m30E309D1C1C0864870686683EF1FCA8DA791D179 (RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5* __this, int32_t ___left0, int32_t ___right1, int32_t ___top2, int32_t ___bottom3, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		intptr_t L_0;
+		L_0 = RectOffset_InternalCreate_m6570FA60917650C43BBA7229F56215B92EC69873(NULL);
+		__this->___m_Ptr_0 = L_0;
+		int32_t L_1 = ___left0;
+		RectOffset_set_left_mEE36418FAC0A5C5AA4A1C886C7CFF5D35AFAD2C0(__this, L_1, NULL);
+		int32_t L_2 = ___right1;
+		RectOffset_set_right_m6D3608E0973F68CC0D0A6A9863D31D70972A9588(__this, L_2, NULL);
+		int32_t L_3 = ___top2;
+		RectOffset_set_top_mEF389A8923A33EC2927AD13ADE00D960D4593207(__this, L_3, NULL);
+		int32_t L_4 = ___bottom3;
+		RectOffset_set_bottom_mB303CE31F9932C3BE8A3FD48E5049D624F395C83(__this, L_4, NULL);
 		return;
 	}
 }
